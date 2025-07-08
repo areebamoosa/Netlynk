@@ -27,20 +27,26 @@
       </div>
 
       <div class="nav-list">
-        <a href=""><i class="fa-solid fa-house"></i>Home</a>
+        <a class="black" href=""><i class="fa-solid fa-house"></i>Home</a>
         <a href=""><i class="fa-solid fa-user"></i>My Network</a>
         <a href=""><i class="fa-solid fa-briefcase"></i>Jobs</a>
         <a href=""><i class="fa-solid fa-message"></i>Messaging</a>
         <a href=""><i class="fa-solid fa-bell"></i>Notifications</a>
       </div>
 
-      <div class="profile-logo">
-        <a href=""> <img src="Img/profile.jpeg" alt="" /></a>
+      <div class="profile-logo" >
+        <!-- <a href=""> <img src="Img/profile.jpeg" onclick="toggleMenu()" alt="" /></a> -->
+
+        <a href="profile.html" onclick="event.preventDefault(); toggleMenu();">
+          <img src="Img/profile.jpeg" alt="" />
+        </a>
+      
+
       </div>
 
       <!-- Profile Drop-Down Menu -->
 
-      <div class="profile-menu-wrap">
+      <div class="profile-menu-wrap" id="profileMenu">
         <div class="profile-menu">
           <div class="user-info">
             <div class="menu-img">
@@ -48,16 +54,14 @@
             </div>
             <div class="menu-details">
               <h3>Hannnah Montannah</h3>
-              <a href="#">See your profile</a>
+              <a href="profile.html">See your profile</a>
             </div>
           </div>
 
+          <hr />
           <div class="list">
             <div>
-              <p>
-                <i class="fa-solid fa-message"></i>Give Feedback
-                <!-- <i class="fa-solid fa-arrow-right"></i> -->
-              </p>
+              <p><i class="fa-solid fa-message"></i>Give Feedback</p>
             </div>
           </div>
 
@@ -66,7 +70,6 @@
               <p>
                 <i class="fa-solid fa-gear"></i>
                 Settings & Privacy
-                <!-- <i class="fa-solid fa-arrow-right"></i> -->
               </p>
             </div>
           </div>
@@ -76,18 +79,13 @@
               <p>
                 <i class="fa-solid fa-circle-question"></i>
                 Help & Support
-                <!-- <i class="fa-solid fa-arrow-right"></i> -->
               </p>
             </div>
           </div>
 
           <div class="list">
             <div>
-              <p>
-                <i class="fa-solid fa-moon"></i>Display & Accessibility
-
-                <!-- <i class="fa-solid fa-arrow-right"></i> -->
-              </p>
+              <p><i class="fa-solid fa-moon"></i>Display & Accessibility</p>
             </div>
           </div>
 
@@ -96,7 +94,6 @@
               <p>
                 <i class="fa-solid fa-right-from-bracket"></i>
                 Logout
-                <!-- <i class="fa-solid fa-arrow-right"></i> -->
               </p>
             </div>
           </div>
@@ -469,5 +466,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

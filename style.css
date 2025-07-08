@@ -73,6 +73,10 @@ body {
   color: black;
   font-weight: 500;
 }
+.nav-list .black {
+  color: black !important;
+  text-decoration: underline !important;
+}
 .profile-logo {
   height: 50px;
   width: 50px;
@@ -620,6 +624,12 @@ hr {
   top: 100%;
   right: 5%;
   width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.profile-menu-wrap.open-menu {
+  max-height: 400px;
 }
 .profile-menu {
   background-color: rgb(255, 253, 253);
@@ -627,16 +637,30 @@ hr {
   color: black;
   padding: 20px;
   margin: 10px;
+  text-align: left;
 }
+
 .user-info {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: -9px;
 }
-.user-info img {
+.user-info a {
+  text-decoration: none;
+  color: black;
+  padding-top: 5px;
+}
+.menu-img {
   width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.menu-img img {
   border-radius: 50%;
-  margin-right: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .menu-details {
   display: flex;
@@ -653,4 +677,79 @@ hr {
 .list p:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* Profile Page */
+
+/* Boxes */
+
+.boxes {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.profile-box {
+  width: 75vw;
+  height: 100vh;
+  border: 2px solid red;
+  overflow-y: auto;
+}
+.side-box {
+  width: 25vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.connect-box {
+  width: 23vw;
+  padding: 50px;
+  background-color: rgb(255, 253, 253);
+  margin: 20px;
+  height: 50%;
+  border-radius: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.connect {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 10px;
+}
+.connect-img {
+  width: 50px;
+  height: 50px;
+}
+.connect-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.btn {
+  background: transparent;
+  border: 2px solid #5f5f5f;
+  color: #5f5f5f;
+  width: 110px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 50px;
+  width: 120px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #5f5f5f;
+  border: 2px solid #fff;
+}
+.people {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

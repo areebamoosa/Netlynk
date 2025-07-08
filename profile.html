@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netlynk</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <div class="navbar">
+      <div class="left">
+        <div class="logo"></div>
+
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="nav-list">
+        <a class="black" href="index.html"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+        <a href="#"><i class="fa-solid fa-user"></i>My Network</a>
+        <a href="#"><i class="fa-solid fa-briefcase"></i>Jobs</a>
+        <a href="#"><i class="fa-solid fa-message"></i>Messaging</a>
+        <a href="#"><i class="fa-solid fa-bell"></i>Notifications</a>
+      </div>
+
+      <div class="profile-logo">
+        <a href="#" onclick="event.preventDefault(); toggleMenu();">
+          <img src="Img/profile.jpeg" alt="" />
+        </a>
+      </div>
+
+      <!-- Profile Drop-Down Menu -->
+
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <div class="menu-img">
+              <img src="Img/profile.jpeg" alt="" />
+            </div>
+            <div class="menu-details">
+              <h3>Hannnah Montannah</h3>
+              <a href="#">See your profile</a>
+            </div>
+          </div>
+
+          <hr />
+          <div class="list">
+            <div>
+              <p><i class="fa-solid fa-message"></i>Give Feedback</p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div>
+              <p>
+                <i class="fa-solid fa-gear"></i>
+                Settings & Privacy
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div>
+              <p>
+                <i class="fa-solid fa-circle-question"></i>
+                Help & Support
+              </p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div>
+              <p><i class="fa-solid fa-moon"></i>Display & Accessibility</p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div>
+              <p>
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <div class="boxes">
+      <div class="profile-box"></div>
+
+      <div class="side-box">
+        <div class="learn-box">
+          <div class="content">
+            <p>Master the 5 principles of web design</p>
+
+            <div class="pictures">
+              <img src="Img/profile.jpeg" alt="" />
+              <img src="Img/brand.png" alt="" />
+            </div>
+
+            <p>Brand and Demand in Xiaomi</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+
+        <div class="connect-box">
+          <h3>People you may know</h3>
+
+          <div class="connect">
+            <div class="connect-img">
+              <img src="Img/profile.jpeg" alt="" />
+            </div>
+
+            <div class="people">
+              <h4>Alicia Capra</h4>
+              <p>Head of marketing at Amazon</p>
+              <button class="btn">Connect</button>
+            </div>
+          </div>
+
+          <div class="connect">
+            <div class="connect-img">
+              <img src="Img/profile.jpeg" alt="" />
+            </div>
+
+            <div class="people">
+              <h4>Alicia Capra</h4>
+              <p>Head of marketing at Amazon</p>
+              <button class="btn">Connect</button>
+            </div>
+          </div>
+
+          <div class="connect">
+            <div class="connect-img">
+              <img src="Img/profile.jpeg" alt="" />
+            </div>
+
+            <div class="people">
+              <h4>Alicia Capra</h4>
+              <p>Head of marketing at Amazon</p>
+              <button class="btn">Connect</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
