@@ -14,7 +14,6 @@ body {
   min-height: 100%;
   margin: 0;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -1085,3 +1084,122 @@ hr {
   left: 10px;
 }
 
+/*  RESPONSIVENESS OF  WHOLE WEBSITE */
+
+/* Media Queries for Navbar */
+
+/* @media (max-width: 1450px) and (min-width: 1000px) {
+  .nav-list {
+    gap: 20px;
+  }
+
+  .nav-list a {
+    gap: 3px;
+  }
+
+  .search-bar {
+    width: 120px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .profile-logo {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-list {
+    gap: 15px;
+  }
+
+  .nav-list a {
+    gap: 2px;
+    font-size: 0.7rem;
+  }
+
+  .search-bar {
+    width: 80px;
+  }
+  .search-bar i {
+    font-size: 0.6rem;
+  }
+
+  input::placeholder {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 765px) and (min-width: 480px) {
+  .nav-list {
+    gap: 10px;
+  }
+
+  .nav-list a {
+    gap: 1px;
+  }
+
+  .search-bar {
+    width: 50px;
+  }
+  .search-bar i {
+    font-size: 0.3rem;
+  }
+
+  input::placeholder {
+    font-size: 0.3rem;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .profile-logo {
+    height: 30px;
+    width: 30px;
+  }
+} */
+
+/* Max width of Navbar For Cellphones */
+
+@media only screen and (max-width: 600px) {
+  /* Responsive Navbar */
+  .navbar {
+    padding: 0 10px;
+  }
+  .left {
+    gap: 2px;
+  }
+
+  .logo,
+  .profile-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-bar {
+    background: transparent;
+    width: auto;
+    padding: 0;
+    max-width: 80px;
+  }
+  .search-bar input {
+    width: 0;
+    padding: 0;
+    border: none;
+    padding-left: 25px;
+    font-size: 12px;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .nav-list a {
+    padding-right: 0;
+    font-size: 1rem;
+    gap: 5px;
+  }
+  .nav-list span {
+    display: none;
+  }
+}
