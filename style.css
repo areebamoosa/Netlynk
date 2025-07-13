@@ -17,6 +17,8 @@ body {
   overflow-x: hidden;
 }
 
+/* Desktop Navigation Bar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -114,6 +116,7 @@ input::placeholder {
 }
 
 /* Containers */
+
 .container {
   display: flex;
   height: 100vh;
@@ -129,14 +132,12 @@ input::placeholder {
   right: 0;
   width: 25vw;
   height: 100%;
-
   position: fixed;
 }
 .mid-container {
   width: 50vw;
   height: 100%;
   overflow-x: hidden;
-
   overflow-y: auto;
 }
 .left-container,
@@ -516,7 +517,6 @@ p {
   width: 12px;
   margin-left: 3px;
 }
-/* Feed-Box */
 .poster {
   display: flex;
   flex-direction: row;
@@ -851,6 +851,8 @@ hr {
   object-fit: cover;
 }
 
+/* About Box */
+
 .about {
   width: 70vw;
   height: 20vh;
@@ -865,6 +867,7 @@ hr {
 .about p {
   color: #5f5f5f;
 }
+/* Experience Box */
 .experience {
   width: 70vw;
   height: 650px;
@@ -882,6 +885,7 @@ hr {
   margin-top: 30px;
   gap: 30px;
 }
+/* Education Box */
 .edu-logo {
   width: 50px;
   height: 50px;
@@ -910,6 +914,7 @@ hr {
   color: black;
 }
 
+/* Skills Box */
 .skills {
   width: 70vw;
   height: 230px;
@@ -936,6 +941,7 @@ hr {
   cursor: pointer;
 }
 
+/* Languages Box */
 .languages {
   width: 70vw;
   height: 150px;
@@ -965,18 +971,16 @@ hr {
   width: 25vw;
   display: flex;
   flex-direction: column;
-
   text-align: left;
   margin-top: 18px;
-
   height: 100%;
   position: sticky;
-
   top: 43px;
-
   overflow: hidden;
   flex-shrink: 0;
 }
+
+/* Connect Box */
 
 .connect-box {
   width: 23vw;
@@ -1025,7 +1029,6 @@ hr {
 .people {
   display: flex;
   flex-direction: column;
-
   gap: 5px;
 }
 
@@ -1090,19 +1093,13 @@ hr {
 /* Responsiveness of the Website For Cellphones */
 
 @media only screen and (max-width: 600px) {
-
-  /* Responsiveness of Navbar */
-
+  /* Responsive Navbar */
   .navbar {
     padding: 0 10px;
-
-    /*  */
-
     width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
   }
 
   .left {
@@ -1150,6 +1147,8 @@ hr {
     height: auto;
     width: 100%;
     max-width: 100%;
+    margin-top: -40px;
+    margin-bottom: -130px;
   }
 
   .left-container,
@@ -1182,6 +1181,9 @@ hr {
   .trend-box {
     padding: 20px;
   }
+  .right-container {
+    margin-bottom: -100px;
+  }
 
   .header {
     width: 100%;
@@ -1199,7 +1201,7 @@ hr {
   .mid-container {
     padding: 10px;
   }
-  .details img{
+  .details img {
     display: none;
   }
 
@@ -1219,7 +1221,7 @@ hr {
 
   .buttons p,
   .sort-by p {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .row-1 {
@@ -1252,17 +1254,204 @@ hr {
   .row-2 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: nowrap;
     gap: 10px;
     margin-top: 15px;
   }
 
   .row-2 .box {
     flex: 1;
-    min-width: 100px;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 5px;
+  }
+
+  /* Feed Posts Responsiveness*/
+
+  .container {
+    margin-bottom: -20px;
+  }
+  .poster {
+    margin-top: -2px;
+    margin-left: 15px;
+  }
+  .post-img {
+    width: 60px;
+    height: 60px;
+  }
+  .post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .feed-box p {
+    font-size: 0.6rem;
+  }
+  .det {
+    font-size: 0.5rem;
+    font-weight: 700;
+  }
+  .like-section {
+    margin-top: -200px;
+    font-size: 0.2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .com {
+    font-size: 0.6rem;
+  }
+
+  /* Profile Page Responsiveness */
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .profile-box {
+    width: 100%;
+  }
+  .profile-details,
+  .about,
+  .experience,
+  .education,
+  .skills,
+  .languages {
+    width: 100%;
+    border-radius: 0;
+  }
+  .profile-header img {
+    border-radius: 0;
+  }
+
+  .profile-box {
+    margin-top: 140px;
+  }
+
+  .profile-header {
+    width: 100%;
+    height: 200px;
+  }
+  .profile-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .profile-img {
+    top: 0;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+  }
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .msg-buttons {
+    margin: 10px;
+  }
+  .profile-name h2,
+  .experience h2,
+  .about h2,
+  .skills h2,
+  .languages h2,
+  .education h2 {
+    font-size: 18px;
+  }
+  .cont,
+  .msg-p {
+    font-size: 12px;
+  }
+  .profile-name p,
+  .edu-det span,
+  .edu-det p {
+    font-size: 12px;
+  }
+
+  .msg-buttons button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+  .about {
+    padding: 15px;
+  }
+  .about p {
+    font-size: 0.5rem;
+  }
+  .experience {
+    padding: 10;
+    height: 1200px;
+  }
+  .edu-det h4 {
+    font-size: 0.6rem;
+  }
+  .exp {
+    margin-bottom: 20px;
+  }
+  .skills {
+    height: 1000px;
+  }
+  .skill-sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .languages {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .skill-sect button,
+  .lang-btn button {
+    font-size: 12px;
+    padding: 5px 8px;
+    margin: 5px 3px;
+  }
+  .side-box {
+    display: none;
+  }
+  .foot {
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-footer {
+    font-size: 0.8rem;
+  }
+  .credits {
+    height: 200px;
+    margin-left: -88px;
+    margin-bottom: 10px;
+  }
+
+  /* Profile Drop Down Responsivess */
+
+  .profile-menu-wrap {
+    width: 200px;
+  }
+  .profile-menu {
+    padding: 10px;
+    overflow: visible;
+  }
+  .menu-details {
+    font-size: 0.6rem;
+  }
+  .menu-details h3 {
+    font-size: 0.8rem;
+  }
+  .list {
+    padding: 10px;
+  }
+  .list p {
+    font-size: 0.5rem;
   }
 }
