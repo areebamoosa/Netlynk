@@ -1120,7 +1120,7 @@ hr {
 
 /* Responsiveness of the Website For Cellphones */
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 400px) {
   /* Responsive Navbar */
   .navbar {
     padding: 0 10px;
