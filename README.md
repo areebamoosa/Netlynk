@@ -14,7 +14,7 @@ NetLynk is a social networking web application built to explore how social media
 
 ## How it looks 👀
 
-![Screenshot](/Img/Demo.png)
+![Demo](/Img/demo.png)
 
 ## 🌐 Live Demo
 
