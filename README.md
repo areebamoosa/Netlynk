@@ -19,3 +19,7 @@ Netlynk is a social networking web application built to explore how social media
 ## 🌐 Live Demo
 
 **View Live Website:** https://netlynk.netlify.app
+
+## Note :
+
+- This project is not responsive and works only on desktop screens.
